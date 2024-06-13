@@ -1,0 +1,43 @@
+a)git log --oneline -1
+
+b)echo "1: Hello, world!" > main.txt
+echo "2: Hello, world!" >> main.txt
+
+c)git add main.txt
+git commit -m "commit 06 - added main.txt"
+
+hash_commit_06=$(git rev-parse HEAD)
+
+d)echo "3: Hello, world!" >> main.txt
+
+e)git add main.txt
+
+f)echo "4: Hello, world!" >> main.txt
+
+g)git reset --hard HEAD~1
+
+h)git status
+git log
+ls
+
+i)echo "1: Hello, world!" > main.txt
+echo "2: Hello, world!" >> main.txt
+
+git add main.txt
+git commit -m "commit 06 - added main.txt"
+
+echo "3: Hello, world!" >> main.txt
+git add main.txt
+
+echo "4: Hello, world!" >> main.txt
+
+j)git reset --soft HEAD~1
+
+k)git status
+git log
+cat main.txt
+//so soft canceled last commit but left all changes in dir
+
+//git add .
+//git commit -m "add all files"
+//git push origin main
