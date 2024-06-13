@@ -1,0 +1,54 @@
+echo "commit 01" > file.txt
+git add file.txt
+git commit -m "commit 01 – initial"
+
+echo "commit 02" >> file.txt
+git add file.txt
+git commit -m "commit 02"
+
+echo "commit 03" >> file.txt
+git add file.txt
+git commit -m "commit 03"
+
+echo "commit 04" >> file.txt
+git add file.txt
+git commit -m "commit 04"
+
+echo "commit 05" >> file.txt
+git add file.txt
+git commit -m "commit 05"
+
+c)git log
+
+d)git show 7780d08e551664c378c73b4ddc0c734ec20cf180
+git show b271c6ca829bab39c7386e11712fbd2a0c33a03a
+git show f4151b9b423896f458613bd0ec99aa7c7505c5db
+
+e)git checkout e2e2d011a7cfc327725838732937070ac30b7d51
+
+f)git checkout -b tmp
+
+g)echo "commit 03.txt" > commit03.txt
+git add commit03.txt
+git commit -m "added commit03.txt"
+
+h)echo "commit03.txt line" >> commit03.txt
+echo "commit03.txt line" >> commit03.txt
+echo "commit03.txt line" >> commit03.txt
+
+i)git checkout main
+//error: Your local changes to the following files would be overwritten by checkout:
+//        commit03.txt
+//Please commit your changes or stash them before you switch branches.
+//Aborting
+
+j)git restore commit03.txt
+
+k)git checkout main
+
+l)git merge tmp
+git branch -d tmp
+
+//git add 4_2_3.txt
+//git commit -m "added comands file"
+//git push origin main
